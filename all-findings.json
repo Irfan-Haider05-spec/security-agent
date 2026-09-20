@@ -1,0 +1,254 @@
+[
+  {
+    "tool": "Semgrep",
+    "title": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "severity": "WARNING",
+    "location": "backend\\.github\\workflows\\backend-ci.yml:28",
+    "details": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks \ufffd as seen in the trivy-action and kics-github-action compromises. Pin the reference to a full 40-character commit SHA instead, e.g. `uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608`."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "severity": "WARNING",
+    "location": "backend\\.github\\workflows\\backend-ci.yml:31",
+    "details": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks \ufffd as seen in the trivy-action and kics-github-action compromises. Pin the reference to a full 40-character commit SHA instead, e.g. `uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608`."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "yaml.docker-compose.security.no-new-privileges.no-new-privileges",
+    "severity": "WARNING",
+    "location": "backend\\docker-compose.yml:49",
+    "details": "Service 'mongo' allows for privilege escalation via setuid or setgid binaries. Add 'no-new-privileges:true' in 'security_opt' to prevent this."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
+    "severity": "WARNING",
+    "location": "backend\\docker-compose.yml:49",
+    "details": "Service 'mongo' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "yaml.docker-compose.security.no-new-privileges.no-new-privileges",
+    "severity": "WARNING",
+    "location": "backend\\docker-compose.yml:71",
+    "details": "Service 'mongo-init' allows for privilege escalation via setuid or setgid binaries. Add 'no-new-privileges:true' in 'security_opt' to prevent this."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
+    "severity": "WARNING",
+    "location": "backend\\docker-compose.yml:71",
+    "details": "Service 'mongo-init' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+    "severity": "WARNING",
+    "location": "backend\\src\\app\\middlewares\\fileUploaderHandler.ts:139",
+    "details": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+    "severity": "WARNING",
+    "location": "backend\\src\\app\\middlewares\\fileUploaderHandler.ts:143",
+    "details": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+    "severity": "WARNING",
+    "location": "backend\\src\\app\\modules\\adminSellandTier\\adminPromotion\\adminPromotion.service.ts:199",
+    "details": "RegExp() called with a `categoryName` function argument, this might allow an attacker to cause a Regular Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-controlled input, consider performing input validation or use a regex checking/sanitization library such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to ReDoS."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp",
+    "severity": "WARNING",
+    "location": "backend\\src\\app\\modules\\analytics\\customer-analytics.service.ts:74",
+    "details": "RegExp() called with a `filters` function argument, this might allow an attacker to cause a Regular Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-controlled input, consider performing input validation or use a regex checking/sanitization library such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to ReDoS."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
+    "severity": "WARNING",
+    "location": "backend\\src\\helpers\\emailHelper.ts:16",
+    "details": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized to false bypasses verification against the list of trusted CAs, which also leads to insecure transport. These options lead to vulnerability to MTM attacks, and should not be used."
+  },
+  {
+    "tool": "Semgrep",
+    "title": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+    "severity": "WARNING",
+    "location": "backend\\src\\shared\\unlinkFile.ts:8",
+    "details": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first."
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-13149 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 1.1.15",
+    "detail": "brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity | Fix: upgrade to 5.0.7, 1.1.16, 2.1.2"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-14257 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 1.1.15",
+    "detail": "brace-expansion: Brace-expansion: Denial of Service via memory exhaustion in expand() function | Fix: upgrade to 5.0.8, 3.0.3, 2.1.3, 1.1.17"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-69152 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 1.1.15",
+    "detail": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation | Fix: upgrade to 1.1.18, 2.1.4, 3.0.6, 5.0.9"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-13149 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 2.1.1",
+    "detail": "brace-expansion: Brace-expansion: Denial of Service due to exponential-time complexity | Fix: upgrade to 5.0.7, 1.1.16, 2.1.2"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-14257 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 2.1.1",
+    "detail": "brace-expansion: Brace-expansion: Denial of Service via memory exhaustion in expand() function | Fix: upgrade to 5.0.8, 3.0.3, 2.1.3, 1.1.17"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-69152 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 2.1.1",
+    "detail": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation | Fix: upgrade to 1.1.18, 2.1.4, 3.0.6, 5.0.9"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-14257 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 5.0.7",
+    "detail": "brace-expansion: Brace-expansion: Denial of Service via memory exhaustion in expand() function | Fix: upgrade to 5.0.8, 3.0.3, 2.1.3, 1.1.17"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-69152 in brace-expansion",
+    "severity": "HIGH",
+    "location": "brace-expansion 5.0.7",
+    "detail": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation | Fix: upgrade to 1.1.18, 2.1.4, 3.0.6, 5.0.9"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-73088 in browserslist",
+    "severity": "HIGH",
+    "location": "browserslist 4.28.5",
+    "detail": "browserslist: Browserslist: Prototype pollution leading to denial of service | Fix: upgrade to 4.28.7"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-73089 in browserslist",
+    "severity": "HIGH",
+    "location": "browserslist 4.28.5",
+    "detail": "browserslist: Browserslist: Denial of Service via unbounded memory growth from distinct query results | Fix: upgrade to 4.28.7"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-19693 in extract-zip",
+    "severity": "HIGH",
+    "location": "extract-zip 2.0.1",
+    "detail": "extract-zip: extract-zip: Arbitrary file write via symlink in archive | Fix: upgrade to N/A"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-56876 in extract-zip",
+    "severity": "HIGH",
+    "location": "extract-zip 2.0.1",
+    "detail": "extract-zip: github.com/maxogden/extract-zip: extract-zip: Arbitrary file write and information disclosure via symlink validation bypass | Fix: upgrade to N/A"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-73569 in fast-xml-parser",
+    "severity": "HIGH",
+    "location": "fast-xml-parser 5.9.3",
+    "detail": "fast-xml-parser: fast-xml-parser: Denial of Service via repeated DOCTYPE declarations | Fix: upgrade to 5.10.1"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-69192 in ip-address",
+    "severity": "HIGH",
+    "location": "ip-address 10.2.0",
+    "detail": "ip-address: ip-address: Inconsistent IP address parsing leads to Server-Side Request Forgery (SSRF) and trust-boundary bypass | Fix: upgrade to 10.3.1"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-84375 in js-yaml",
+    "severity": "HIGH",
+    "location": "js-yaml 3.15.0",
+    "detail": "js-yaml: js-yaml: Denial of Service vulnerability in YAML parsing | Fix: upgrade to 4.3.2, 3.15.2"
+  },
+  {
+    "tool": "trivy",
+    "title": "GHSA-5p4m-2wfm-xmqj in js-yaml",
+    "severity": "HIGH",
+    "location": "js-yaml 3.15.0",
+    "detail": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) \u2014 CVE-2026-59870 fix not backported | Fix: upgrade to 4.3.1, 3.15.1"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-77037 in multer",
+    "severity": "HIGH",
+    "location": "multer 2.2.0",
+    "detail": "multer vulnerable to Denial of Service via file descriptor leak on aborted uploads | Fix: upgrade to 2.3.0"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-77078 in multer",
+    "severity": "HIGH",
+    "location": "multer 2.2.0",
+    "detail": "multer vulnerable to Denial of Service via crafted multipart field names | Fix: upgrade to 2.3.0"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-82333 in multer",
+    "severity": "HIGH",
+    "location": "multer 2.2.0",
+    "detail": "multer vulnerable to Denial of Service via oversized array index in field names | Fix: upgrade to 2.3.0"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2025-57282 in ngrok",
+    "severity": "HIGH",
+    "location": "ngrok 5.0.0-beta.2",
+    "detail": "ngrok is Vulnerable to Command Injection | Fix: upgrade to N/A"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-82659 in nodemailer",
+    "severity": "HIGH",
+    "location": "nodemailer 8.0.11",
+    "detail": "nodemailer: Nodemailer: Arbitrary file read and Server-Side Request Forgery via raw option bypass | Fix: upgrade to 9.0.1"
+  },
+  {
+    "tool": "trivy",
+    "title": "GHSA-2x7j-588g-ccc2 in nodemailer",
+    "severity": "HIGH",
+    "location": "nodemailer 8.0.11",
+    "detail": "Nodemailer: Quadratic (O(n\u00b2)) time complexity in addressparser allows remote denial of service via a crafted address list | Fix: upgrade to 9.1.0"
+  },
+  {
+    "tool": "trivy",
+    "title": "CVE-2026-69185 in socket.io-parser",
+    "severity": "HIGH",
+    "location": "socket.io-parser 4.2.6",
+    "detail": "socket.io-parser: Socket.IO: Denial of Service via memory exhaustion from crafted packets | Fix: upgrade to 4.2.7, 3.4.5, 3.3.6"
+  },
+  {
+    "tool": "gitleaks",
+    "title": "Hardcoded secret: private-key",
+    "severity": "HIGH",
+    "location": "c.md:13",
+    "detail": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption."
+  }
+]

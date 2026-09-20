@@ -1,0 +1,26 @@
+[
+ {
+  "RuleID": "private-key",
+  "Description": "Identified a Private Key, which may compromise cryptographic security and sensitive data encryption.",
+  "StartLine": 13,
+  "EndLine": 13,
+  "StartColumn": 32,
+  "EndColumn": 2303,
+  "Match": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBpW7zTIAVGbw+\nsj8bjTFsHQxiAr7kzr+NMYkfH65+QCwV13jDJv2UtWMZX6JQ/s79m9utUUJtsbeD\nQgPXN9EifFPlXWnT1ljWpXJkPupQnBSwkCRdxQbQ9Ql8GOYXap7eW3Zggi1BtOz7\nWOp94wAPHupHoF/HatECEructkMZruoFq9RxYK0jEFKs18jK/S1W7Vrt/GIGw1dF\nqIkK9rQdEZVV13oM8kidVuDz0RrqPBLivUUmrVxMozf8A/Iy2E2huRl/jPtzL08v\nJZs4+iXh6eUArLlmO/d76jEDZG5To1kVtO3eyidQcrcQ1gfuFaK/rVKQd9eHtYqP\ni2/q5/WPAgMBAAECggEADarQ8WARXCvkUuJ+vMGS3ugP8yzxbzG+aEc6P9WbGbMK\nyYHbNp7eX+wLcgODb8cEMfcZopptH1PfOWbj4YFBg/cVbsdQjFCBFak4sSWVoRnb\nBfkub+XTjNT2lekl+Dogu13mNXqKmiwcW8MTTc5DN039yA9kIy2BUe2jizR7+Oh1\niuj5fKmBfkqjfg9JjmyK3ZDZoKhNUjmYew5Gui7Jki/mBCMsbbkozuN5tMAPzQ2E\nxJUQAdTOQwAMn1npAs6oj0cPcV1y0XtC1JwQ0Vfsaz7x/5xyqQeOF7sM6Pjf37Qz\n18i11W01Rxz+uXaW/pA1uC7BuS1e90CbKaUJ1zrM5QKBgQDo5xOid/RUh/teED5X\nAtOVRg0vA2hIX7FdD0Me1iTRsvcTOXvPEJDT85OkNmcMMQUrFpmzel3aI5h9/vwt\nNeXQVrPiBtbyvwlvLJ1fxWJGoQtPiA1pI0QzQoWe5tTQViBX5JBC7OHkOvkhfuR/\nvTlB0lpHIncv2Icy1ImHIaltuwKBgQDU2bdcQCeufD9HbNIjrYkv5mLb4vHbP8zl\nHhXXGcFSdmtpc9IooCSL4LuJ/VLILfKlmUky7X13tfYvxNNIMy0inPrwG5k3cl2X\nLrsugXi5zYmIPZJgF3RXl9TxFT1a0weqN6vJddkrS5ZtnPCX7ZrcmitW7Ke8GZQZ\nkFM2ZKVwPQKBgD1FNTQjrIJkd6uKSGwpkTIPCL7afZ+0lPtvXXAKVAtasoc7MygJ\nKqCnzqp/qWJarwpj2rGNuoz9mktjPkJCkJ/bf10yAXBA86FsskYUrkL4cPpOR4Dm\nRzXZBUAFZ+0bC000EwOYP+ED5rB6KnC0fhCj3x4hogtTQlYL9dY389OrAoGAWgqv\n8qqBHuMYsdJrIwSqYEUJ1RMwVRusRdBwVMpkacoGrll8sgrs6u9q5njvqBcn6r3p\npU2qIhYryxFsf8KGeXoG/cPvEPGkfewa6xWCSLeWUrgZT+UcJmHohwQBLIbRW0Sp\nu1PLRvF29W/Kp7qwJFpjsyXx3zTC3f2b9gqlodECgYAIcEs/Zu5DPcD6q34CIoV4\nENl6FTN4FHALZHmfcV/IgiE+uR2rOzJ1Qfg9OiQ6Vn/gtW3CzlGyd4JxVDdiJ4L4\n+4A/qaV1e1/jZGAQFYO30UcczJF73I1iTheAxOoxwnqLd6RkXYL2lBmGx/wS+8Sn\nB5mbwKYOth9Iv9bXGM+cfg==\n-----END PRIVATE KEY-----",
+  "Secret": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBpW7zTIAVGbw+\nsj8bjTFsHQxiAr7kzr+NMYkfH65+QCwV13jDJv2UtWMZX6JQ/s79m9utUUJtsbeD\nQgPXN9EifFPlXWnT1ljWpXJkPupQnBSwkCRdxQbQ9Ql8GOYXap7eW3Zggi1BtOz7\nWOp94wAPHupHoF/HatECEructkMZruoFq9RxYK0jEFKs18jK/S1W7Vrt/GIGw1dF\nqIkK9rQdEZVV13oM8kidVuDz0RrqPBLivUUmrVxMozf8A/Iy2E2huRl/jPtzL08v\nJZs4+iXh6eUArLlmO/d76jEDZG5To1kVtO3eyidQcrcQ1gfuFaK/rVKQd9eHtYqP\ni2/q5/WPAgMBAAECggEADarQ8WARXCvkUuJ+vMGS3ugP8yzxbzG+aEc6P9WbGbMK\nyYHbNp7eX+wLcgODb8cEMfcZopptH1PfOWbj4YFBg/cVbsdQjFCBFak4sSWVoRnb\nBfkub+XTjNT2lekl+Dogu13mNXqKmiwcW8MTTc5DN039yA9kIy2BUe2jizR7+Oh1\niuj5fKmBfkqjfg9JjmyK3ZDZoKhNUjmYew5Gui7Jki/mBCMsbbkozuN5tMAPzQ2E\nxJUQAdTOQwAMn1npAs6oj0cPcV1y0XtC1JwQ0Vfsaz7x/5xyqQeOF7sM6Pjf37Qz\n18i11W01Rxz+uXaW/pA1uC7BuS1e90CbKaUJ1zrM5QKBgQDo5xOid/RUh/teED5X\nAtOVRg0vA2hIX7FdD0Me1iTRsvcTOXvPEJDT85OkNmcMMQUrFpmzel3aI5h9/vwt\nNeXQVrPiBtbyvwlvLJ1fxWJGoQtPiA1pI0QzQoWe5tTQViBX5JBC7OHkOvkhfuR/\nvTlB0lpHIncv2Icy1ImHIaltuwKBgQDU2bdcQCeufD9HbNIjrYkv5mLb4vHbP8zl\nHhXXGcFSdmtpc9IooCSL4LuJ/VLILfKlmUky7X13tfYvxNNIMy0inPrwG5k3cl2X\nLrsugXi5zYmIPZJgF3RXl9TxFT1a0weqN6vJddkrS5ZtnPCX7ZrcmitW7Ke8GZQZ\nkFM2ZKVwPQKBgD1FNTQjrIJkd6uKSGwpkTIPCL7afZ+0lPtvXXAKVAtasoc7MygJ\nKqCnzqp/qWJarwpj2rGNuoz9mktjPkJCkJ/bf10yAXBA86FsskYUrkL4cPpOR4Dm\nRzXZBUAFZ+0bC000EwOYP+ED5rB6KnC0fhCj3x4hogtTQlYL9dY389OrAoGAWgqv\n8qqBHuMYsdJrIwSqYEUJ1RMwVRusRdBwVMpkacoGrll8sgrs6u9q5njvqBcn6r3p\npU2qIhYryxFsf8KGeXoG/cPvEPGkfewa6xWCSLeWUrgZT+UcJmHohwQBLIbRW0Sp\nu1PLRvF29W/Kp7qwJFpjsyXx3zTC3f2b9gqlodECgYAIcEs/Zu5DPcD6q34CIoV4\nENl6FTN4FHALZHmfcV/IgiE+uR2rOzJ1Qfg9OiQ6Vn/gtW3CzlGyd4JxVDdiJ4L4\n+4A/qaV1e1/jZGAQFYO30UcczJF73I1iTheAxOoxwnqLd6RkXYL2lBmGx/wS+8Sn\nB5mbwKYOth9Iv9bXGM+cfg==\n-----END PRIVATE KEY-----",
+  "File": "c.md",
+  "SymlinkFile": "",
+  "Commit": "19ade3f7a6e8ed47453ce339497f0b46b5bb7d68",
+  "Link": "https://github.com/admintmhsmc/Loyalty-Backend-Code/blob/19ade3f7a6e8ed47453ce339497f0b46b5bb7d68/c.md?plain=1#L13",
+  "Entropy": 6.024116,
+  "Author": "Irfan-Haider05-spec",
+  "Email": "irfanbngs14125@gmail.com",
+  "Date": "2026-07-24T09:17:32Z",
+  "Message": "Pictures-url set",
+  "Tags": [
+   "decoded:base64",
+   "decode-depth:1"
+  ],
+  "Fingerprint": "19ade3f7a6e8ed47453ce339497f0b46b5bb7d68:c.md:private-key:13"
+ }
+]
