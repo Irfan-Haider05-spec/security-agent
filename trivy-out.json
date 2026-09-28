@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.74.0"
   },
-  "ReportID": "01a0be85-b3d9-7489-8752-ae8cf9a75f8b",
-  "CreatedAt": "2026-09-20T16:13:48.5052974+05:00",
+  "ReportID": "01a0e72c-645d-73fb-81a1-b1849dcffc1e",
+  "CreatedAt": "2026-09-28T13:40:41.3092611+05:00",
   "ArtifactID": "sha256:3d338d4852276c45280e492e9bcb341acb85b2ab9df53719dae67a8bbb86cb23",
   "ArtifactName": "backend",
   "ArtifactType": "repository",
@@ -22553,7 +22553,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:47058",
-            "https://access.redhat.com/errata/RHSA-2026:48034",
             "https://access.redhat.com/security/cve/CVE-2026-13149",
             "https://bugzilla.redhat.com/2494813",
             "https://bugzilla.redhat.com/2498116",
@@ -22565,7 +22564,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13149",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59873",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59874",
-            "https://errata.almalinux.org/10/ALSA-2026-48034.html",
+            "https://errata.almalinux.org/9/ALSA-2026-47058.html",
             "https://errata.rockylinux.org/RLSA-2026:47058",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/835d6be91201122d9adffb0c0c8c094189ace265",
@@ -22634,7 +22633,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-14257",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -22653,7 +22651,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -22721,7 +22719,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-69152",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -22740,7 +22737,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -22807,7 +22804,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:47058",
-            "https://access.redhat.com/errata/RHSA-2026:48034",
             "https://access.redhat.com/security/cve/CVE-2026-13149",
             "https://bugzilla.redhat.com/2494813",
             "https://bugzilla.redhat.com/2498116",
@@ -22819,7 +22815,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13149",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59873",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59874",
-            "https://errata.almalinux.org/10/ALSA-2026-48034.html",
+            "https://errata.almalinux.org/9/ALSA-2026-47058.html",
             "https://errata.rockylinux.org/RLSA-2026:47058",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/835d6be91201122d9adffb0c0c8c094189ace265",
@@ -22888,7 +22884,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-14257",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -22907,7 +22902,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -22975,7 +22970,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-69152",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -22994,7 +22988,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -23058,7 +23052,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-14257",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -23077,7 +23070,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -23145,7 +23138,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-69152",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -23164,7 +23156,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/juliangruber/brace-expansion",
             "https://github.com/juliangruber/brace-expansion/commit/139d015104e71433ad52a41d19467c48ecbb2c7d",
@@ -23499,7 +23491,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-69192",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -23518,7 +23509,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/beaugunderson/ip-address",
             "https://github.com/beaugunderson/ip-address/commit/56368cb3d66c73ba0ee9b6b834fd31b22c2fd71e",
@@ -23580,7 +23571,6 @@
           },
           "References": [
             "https://access.redhat.com/errata/RHSA-2026:55603",
-            "https://access.redhat.com/errata/RHSA-2026:58819",
             "https://access.redhat.com/security/cve/CVE-2026-54272",
             "https://bugzilla.redhat.com/2506433",
             "https://bugzilla.redhat.com/2507593",
@@ -23599,7 +23589,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54272",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69152",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-69192",
-            "https://errata.almalinux.org/10/ALSA-2026-58819.html",
+            "https://errata.almalinux.org/9/ALSA-2026-55603.html",
             "https://errata.rockylinux.org/RLSA-2026:55603",
             "https://github.com/beaugunderson/ip-address",
             "https://github.com/beaugunderson/ip-address/commit/4a1f613f4c1bec915677dea923c10aaa09361ef9",
@@ -23842,7 +23832,7 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:e0d6ee7d099f4dfceec410f79249105c97a6fe503179a681acb71dd8ef223f3d",
-          "Title": "multer vulnerable to Denial of Service via file descriptor leak on aborted uploads",
+          "Title": "multer: Multer: Denial of Service via file descriptor leak on aborted uploads",
           "Description": "multer is a middleware for handling multipart/form-data in Node.js. In version 2.2.0, when a disk-backed upload is aborted or truncated before the write stream finishes, multer's disk storage engine removes the visible file but does not close the underlying write file descriptor, leaving a deleted but still open descriptor. A remote attacker able to reach an upload route using the built-in disk storage can send repeated aborted or malformed multipart uploads, each one leaking a file descriptor and retaining disk blocks until the process exits, which can exhaust resources and cause a denial of service. The issue is fixed in multer 2.3.0, which closes the destination write stream on abnormal source termination and defers cleanup until the stream has closed. Upgrade to multer 2.3.0 to remediate.",
           "Severity": "HIGH",
           "CweIDs": [
@@ -23850,21 +23840,28 @@
             "CWE-459"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77037",
             "https://cna.openjsf.org/security-advisories.html",
             "https://github.com/expressjs/multer",
             "https://github.com/expressjs/multer/commit/eef74440b491ef0f976f3d25895e8089ae495df0",
             "https://github.com/expressjs/multer/releases/tag/v2.3.0",
             "https://github.com/expressjs/multer/security/advisories/GHSA-qfvm-cv95-jqjf",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-77037"
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77037",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77037"
           ],
           "PublishedDate": "2026-08-28T22:16:53.627Z",
           "LastModifiedDate": "2026-09-02T14:47:21.14Z"
@@ -23891,28 +23888,35 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:b2a846369e5e492d2027444761016e5438313908760a83ffe066e886c239d3c4",
-          "Title": "multer vulnerable to Denial of Service via crafted multipart field names",
+          "Title": "multer: Multer: Denial of Service via crafted multipart field names",
           "Description": "multer is a middleware for handling multipart/form-data in Node.js. A small multipart request containing two specially crafted text field names can cause an uncaught RangeError (Invalid array length) that terminates the Node.js process. The first field uses a very large numeric array index to allocate a maximum-length sparse array, and a second field then pushes past that length, which throws inside the append-field dependency and is not caught by multer. All versions before 2.3.0 are affected, and the issue is a remotely triggerable denial of service. The issue is fixed in multer 2.3.0. Upgrade to multer 2.3.0 to remediate.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-248"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77078",
             "https://cna.openjsf.org/security-advisories.html",
             "https://github.com/expressjs/multer",
             "https://github.com/expressjs/multer/commit/87a584e8c8d4da873292635fa1d8c4d78d985b76",
             "https://github.com/expressjs/multer/releases/tag/v2.3.0",
             "https://github.com/expressjs/multer/security/advisories/GHSA-wc9g-mqfw-jrwm",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-77078"
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77078",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77078"
           ],
           "PublishedDate": "2026-08-28T22:16:53.883Z",
           "LastModifiedDate": "2026-09-02T14:46:28.59Z"
@@ -23939,29 +23943,36 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:0d47cb8e36bd8d1a2cd9a4c14022d0436d4a7b34590b8bde9742249da3f33304",
-          "Title": "multer vulnerable to Denial of Service via oversized array index in field names",
+          "Title": "multer: Multer: Denial of Service via oversized array index in field names",
           "Description": "multer is a middleware for handling multipart/form-data in Node.js. A small multipart request with two specially crafted text field names can make multer's field parser synchronously iterate a maximum-length sparse array, blocking the event loop so the process cannot handle other requests. A large numeric array index in the first field allocates a maximum-length sparse array, and a second field with a non-numeric key then triggers a full-length iteration inside the append-field dependency. All versions before 2.3.0 are affected, and this is a remotely triggerable denial of service. multer 2.3.0 adds an opt-in fieldArrayIndexLimit option that rejects oversized array indexes. Upgrade to multer 2.3.0 and set limits.fieldArrayIndexLimit to the largest array index your application needs to remediate.",
           "Severity": "HIGH",
           "CweIDs": [
             "CWE-400"
           ],
           "VendorSeverity": {
-            "ghsa": 3
+            "ghsa": 3,
+            "redhat": 3
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-82333",
             "https://cna.openjsf.org/security-advisories.html",
             "https://github.com/expressjs/multer",
             "https://github.com/expressjs/multer/commit/73c1759fa93b87366bc6dbd7abe1b80ddff7d27c",
             "https://github.com/expressjs/multer/pull/1438",
             "https://github.com/expressjs/multer/releases/tag/v2.3.0",
             "https://github.com/expressjs/multer/security/advisories/GHSA-535w-7cp7-47q4",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-82333"
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-82333",
+            "https://www.cve.org/CVERecord?id=CVE-2026-82333"
           ],
           "PublishedDate": "2026-08-28T22:16:57.037Z",
           "LastModifiedDate": "2026-09-02T14:45:57.747Z"
@@ -23988,28 +23999,35 @@
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
           },
           "Fingerprint": "sha256:26295fdfcc23ff51c665aa9255a5a05dfa0ca7ce4989072575b86521ab308989",
-          "Title": "multer vulnerable to file size limit bypass via async fileFilter race condition",
+          "Title": "multer: Multer: File size limit bypass via asynchronous file filter race condition",
           "Description": "multer is a middleware for handling multipart/form-data in Node.js. When an application uses an asynchronous fileFilter together with the fileSize limit, a race condition in multer's file stream handling can allow a file that exceeds the configured size limit to bypass the size-limit rejection. All versions before 2.3.0 are affected. The impact is limited because the underlying multipart parser still truncates the stream at the size limit, so this is a bypass of the limit rejection rather than uncontrolled resource consumption. The issue is fixed in multer 2.3.0. Upgrade to multer 2.3.0 to remediate.",
           "Severity": "LOW",
           "CweIDs": [
             "CWE-362"
           ],
           "VendorSeverity": {
-            "ghsa": 1
+            "ghsa": 1,
+            "redhat": 1
           },
           "CVSS": {
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
               "V3Score": 3.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 3.7
             }
           },
           "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77063",
             "https://cna.openjsf.org/security-advisories.html",
             "https://github.com/expressjs/multer",
             "https://github.com/expressjs/multer/commit/ab6aeae650328cf31799dcfa4c3e116ba8faaacc",
             "https://github.com/expressjs/multer/releases/tag/v2.3.0",
             "https://github.com/expressjs/multer/security/advisories/GHSA-qvfw-j98x-7q72",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-77063"
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77063",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77063"
           ],
           "PublishedDate": "2026-08-28T22:16:53.76Z",
           "LastModifiedDate": "2026-09-02T14:46:51.367Z"

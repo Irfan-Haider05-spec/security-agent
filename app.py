@@ -1,7 +1,9 @@
 from fastapi import FastAPI, Form
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 import subprocess
 import json
+import threading
+from score import calculate_score
 
 app = FastAPI()
 
@@ -10,7 +12,7 @@ COLORS = {
     "MEDIUM": "#f9a825", "WARNING": "#f9a825", "LOW": "#388e3c", "INFO": "#607d8b"
 }
 
-# saara page ek jaisा dikhe — common style + head
+# saara page ek jaisa dikhe — common style + head
 PAGE_HEAD = """
 <head>
 <meta charset="utf-8">
@@ -42,6 +44,10 @@ PAGE_HEAD = """
   .stat-label { font-size:13px; color:#6b7280; margin-top:4px; letter-spacing:0.5px; }
   .table-wrap { overflow-x:auto; border-radius:8px; }
   table { border-radius:8px; overflow:hidden; }
+  .score-box { display:inline-block; background:#1a237e; color:#fff; border-radius:12px; padding:20px 34px; text-align:center; margin-bottom:8px; }
+  .score-num { font-size:44px; font-weight:800; line-height:1; }
+  .score-grade { font-size:16px; margin-top:6px; opacity:0.9; }
+  .score-box .stat-label { color:#c5cae9; margin-top:4px; }
 </style>
 <script>
   function showLoading(msg) {
@@ -104,6 +110,9 @@ def scan(target: str = Form(...)):
         s = f["severity"].upper()
         counts[s] = counts.get(s, 0) + 1
 
+    # security score (loop ke BAHAR — poori list pe ek baar)
+    score, grade = calculate_score(findings)
+
     # summary cards
     cards = ""
     for sev in ["CRITICAL","HIGH","ERROR","MEDIUM","WARNING","LOW","INFO"]:
@@ -133,6 +142,11 @@ def scan(target: str = Form(...)):
         <div class="card">
           <h2 style="margin-top:0;">Scan Complete</h2>
           <p class="muted">Target: <b>{target}</b> &nbsp;|&nbsp; Total findings: <b>{len(findings)}</b></p>
+          <div class="score-box">
+            <div class="score-num">{score}<span style="font-size:20px;">/100</span></div>
+            <div class="score-grade">Grade {grade}</div>
+            <div class="stat-label">Security Score</div>
+          </div>
           <div class="stats">{cards}</div>
         </div>
 
@@ -147,7 +161,7 @@ def scan(target: str = Form(...)):
         </div>
 
         <div class="card">
-          <form action="/report" method="post" onsubmit="showLoading('Generating AI report... (15-25 minutes)')">
+          <form action="/report" method="post">
             <input type="hidden" name="target" value="{target}" />
             <p style="margin-top:0;">Generate a detailed AI report with explanations and fixes for each finding.</p>
             <button type="submit">Generate AI Report</button>
@@ -157,10 +171,63 @@ def scan(target: str = Form(...)):
     </body></html>
     """
 
-@app.post("/report", response_class=HTMLResponse)
-def report(target: str = Form(...)):
+# background mein report banane ka kaam
+def run_report_job():
     subprocess.run(["python", "ai_report.py"])
     subprocess.run(["python", "make_report.py"])
+    with open("progress.json", "w", encoding="utf-8") as pf:
+        json.dump({"done": -1, "total": -1}, pf)   # -1 = poora ho gaya
+
+@app.post("/report", response_class=HTMLResponse)
+def report(target: str = Form(...)):
+    # report ka kaam background mein shuru karo
+    threading.Thread(target=run_report_job).start()
+
+    # progress bar wala page turant dikhao
+    return """
+    <html>""" + PAGE_HEAD + """
+    <body>
+      <div class="topbar">🛡️ Security Agent</div>
+      <div class="container">
+        <div class="card">
+          <h2 style="margin-top:0;">Generating AI Report...</h2>
+          <p class="muted">The local AI is analysing each finding. This runs on your machine and may take several minutes.</p>
+          <div style="background:#e5e7eb; border-radius:20px; height:26px; overflow:hidden; margin-top:20px;">
+            <div id="bar" style="background:#1a237e; height:100%; width:0%; transition:width 0.4s; text-align:center; color:#fff; font-size:13px; line-height:26px;">0%</div>
+          </div>
+          <p id="status" class="muted" style="margin-top:12px;">Starting...</p>
+        </div>
+      </div>
+      <script>
+        const timer = setInterval(async () => {
+          const res = await fetch('/progress');
+          const data = await res.json();
+          if (data.done === -1) {
+            clearInterval(timer);
+            window.location.href = '/view-report';
+            return;
+          }
+          if (data.total > 0) {
+            const pct = Math.round(data.done / data.total * 100);
+            document.getElementById('bar').style.width = pct + '%';
+            document.getElementById('bar').innerText = pct + '%';
+            document.getElementById('status').innerText =
+              data.done + ' of ' + data.total + ' findings analysed';
+          }
+        }, 2000);
+      </script>
+    </body></html>
+    """
+
+@app.get("/view-report", response_class=HTMLResponse)
+def view_report():
     with open("report.html", "r", encoding="utf-8") as f:
-        report_html = f.read()
-    return report_html
+        return f.read()
+
+@app.get("/progress")
+def progress():
+    try:
+        with open("progress.json", "r", encoding="utf-8") as f:
+            return JSONResponse(json.load(f))
+    except:
+        return JSONResponse({"done": 0, "total": 0})

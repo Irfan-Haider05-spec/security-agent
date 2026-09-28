@@ -200,21 +200,21 @@
     "title": "CVE-2026-77037 in multer",
     "severity": "HIGH",
     "location": "multer 2.2.0",
-    "detail": "multer vulnerable to Denial of Service via file descriptor leak on aborted uploads | Fix: upgrade to 2.3.0"
+    "detail": "multer: Multer: Denial of Service via file descriptor leak on aborted uploads | Fix: upgrade to 2.3.0"
   },
   {
     "tool": "trivy",
     "title": "CVE-2026-77078 in multer",
     "severity": "HIGH",
     "location": "multer 2.2.0",
-    "detail": "multer vulnerable to Denial of Service via crafted multipart field names | Fix: upgrade to 2.3.0"
+    "detail": "multer: Multer: Denial of Service via crafted multipart field names | Fix: upgrade to 2.3.0"
   },
   {
     "tool": "trivy",
     "title": "CVE-2026-82333 in multer",
     "severity": "HIGH",
     "location": "multer 2.2.0",
-    "detail": "multer vulnerable to Denial of Service via oversized array index in field names | Fix: upgrade to 2.3.0"
+    "detail": "multer: Multer: Denial of Service via oversized array index in field names | Fix: upgrade to 2.3.0"
   },
   {
     "tool": "trivy",

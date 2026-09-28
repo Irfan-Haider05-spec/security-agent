@@ -52,6 +52,9 @@ html = f"""<!DOCTYPE html>
 <meta charset="utf-8">
 <title>Security Report</title>
 <style>
+  @media print {{
+    button {{ display: none; }}
+  }}
   body {{ font-family: Arial, sans-serif; background:#f4f4f4; margin:0; padding:20px; color:#222; }}
   h1 {{ color:#1a237e; }}
   .meta {{ color:#666; margin-bottom:20px; }}
@@ -66,6 +69,10 @@ html = f"""<!DOCTYPE html>
 </style>
 </head>
 <body>
+  <button onclick="window.print()"
+    style="position:fixed; top:20px; right:20px; padding:10px 18px; background:#1a237e; color:#fff; border:none; border-radius:8px; cursor:pointer; font-size:14px; z-index:100;">
+    ⬇ Download / Print Report
+  </button>
   <h1>🛡️ Security Scan Report</h1>
   <p class="meta">Generated: {datetime.now().strftime("%Y-%m-%d %H:%M")} &nbsp;|&nbsp; Total findings: {len(findings)}</p>
   <div class="summary">{summary_html}</div>

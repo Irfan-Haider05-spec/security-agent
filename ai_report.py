@@ -39,6 +39,9 @@ with open("all-findings.json", "r", encoding="utf-8") as f:
 results = []
 total = len(findings)
 
+with open("progress.json", "w", encoding="utf-8") as pf:
+    json.dump({"done": 0, "total": len(findings)}, pf)
+
 for i, finding in enumerate(findings):
     print(f"Processing {i+1}/{total} ...")
     explanation = ask_model(build_prompt(finding))
@@ -49,6 +52,8 @@ for i, finding in enumerate(findings):
         "location": finding["location"],
         "explanation": explanation
     })
+    with open("progress.json", "w", encoding="utf-8") as pf:
+        json.dump({"done": i + 1, "total": total}, pf)
 
 with open("ai-report.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2)
